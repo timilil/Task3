@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation HTML5</h1>
+
+    <form>
+        <!-- your input elements here -->
+        <label>First name:<br>
+            <input type="text" name="firstname" required></label><br>
+        <label>Last name:<br>
+            <input type="text" name="lastname" required></label><br>
+        <label>Email:<br>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="Enter a valid email address" title="Give in form example@exmaple.com"></label><br>
+        <label>Phone number:<br>
+            <input type="tel" name="phonenumber" required pattern="^\+\d{5,}$" title="Give number starting with country code. For example finnish +358401234567"></label><br>
+        <label>Address:<br>
+            <input type="text" name="address"></label><br>
+        <label>Postal code:<br>
+            <input type="text" name="postalcode" pattern="^[0-9]{5}$" title="Enter 5 numbers"></label><br>
+        <label>Password:<br>
+            <input type="password" name="password" pattern=".{6,}" required title="Give atleast 6 characters"></label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
